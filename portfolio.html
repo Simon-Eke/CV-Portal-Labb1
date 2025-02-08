@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Input checkbox for toggling the menu -->
+            <input type="checkbox" id="nav-toggle" class="toggle-input">
+            
+            <!-- Label for the hamburger icon (this will appear on mobile) -->
+            <label for="nav-toggle" class="hamburger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        
+        <article id="portfolio-image">
+            <h1>Portfolio</h1>
+        </article>
+        
+    </header>
+
+    <main>
+        <section class="projects-container">
+            <article class="card">
+                <h2>HangMan Game</h2>
+
+                <figure class="card-section">
+                    <img src="pictures/hang-man-screenshot.jpg" alt="Screenshot of HangMan game with game instructions, guessed letters and lives remaining in white text on black background.">
+                    <figcaption>HangMan game in action: Player guesses letters until 0 lives or correct word</figcaption>
+                </figure>
+
+                <a href="https://github.com/Simon-Eke/HangMan" target="_blank" title="Click to view my HangMan project on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+            </article>
+        
+            <article class="card">
+                <h2>PONG Game</h2>
+
+                <figure>
+                    <img src="pictures/pong-game-screenshot.jpg" alt="Screenshot of PONG game with two paddles and a bouncing ball on a black background">
+                    <figcaption>PONG game in action: A player controls a paddle to bounce the ball back and forth.</figcaption>
+                </figure>
+
+                <a href="https://github.com/Simon-Eke/PONG-GAME" target="_blank" title="Click to view my Pong project on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+            </article>
+
+            <article class="card">
+                <h2>Work In Progress...</h2>
+
+                <figure>
+                    <img src="pictures/underConstruction.jpg" alt="Picture of a construction site">
+                    <figcaption>A construction site.</figcaption>
+                </figure>
+
+                <a href="https://github.com/Simon-Eke" target="_blank" title="Click to view my repos on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Min Portfolio<br>Mail: simon3eke@gmail.com<br>Tel: 0705516182
+        </p>
+    </footer>
+
+    <!-- Include JavaScript file at the end of the body -->
+    
+</body>
+</html>
