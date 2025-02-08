@@ -4,12 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <header>
         <nav>
+            <!-- Input checkbox for toggling the menu -->
+            <input type="checkbox" id="nav-toggle" class="toggle-input">
+                
+            <!-- Label for the hamburger icon (this will appear on mobile) -->
+            <label for="nav-toggle" class="hamburger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cv.html">CV</a></li>
@@ -21,6 +33,7 @@
 
         <article id="contact-image">
             <h1>Kontakt</h1>
+            <div id="hidden-area"></div>
         </article>
     </header>
 

@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
+#hidden-area {
+    z-index: 5000;
+    background-color:#00000030;
+    padding: 2px;
+}
+
+h1 {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
 h2 {
     text-align: center;
 }
@@ -27,6 +40,7 @@ header article {
     justify-content: center;
     height: 100%;
 }
+
 header article h1 {
     text-shadow: 0px 0px 3px white;
 }
@@ -139,7 +153,7 @@ footer p {
 
 .card-section {
     max-width: 100%;
-    padding: 1rem 0;
+    padding: 2rem 0;
     border-style: dotted none;
 }
 
@@ -154,6 +168,80 @@ footer p {
 }
 .card a:hover {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.projects-container .card section {
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    gap: 1em;
+}
+
+.modal a {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal a:hover {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Show modal when checkbox is checked */
+.modal-toggle:checked + .modal {
+    display: flex;
+}
+
+/* Close button */
+.close-btn {
+    display: block;
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* More Info button */
+.more-info-btn {
+    display: flex;
+    background-color: rgba(149, 0, 255, 0.541);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.more-info-btn:hover {
+    box-shadow: 0px 0px 5px 5px;
 }
 
 /* Mobile page responsiveness */
@@ -176,7 +264,7 @@ footer p {
         width: 100%;
         text-align: center;
         position: absolute;
-        transition: max-height 0.3s ease-out; /* Smooth transition */
+        transition: max-height 0.3s ease-out; 
         max-height: 0;
         overflow: hidden;
     }
@@ -206,7 +294,7 @@ footer p {
     }
 
     /* When the checkbox is checked, show the navigation */
-    #nav-toggle:checked + .hamburger-icon + ul {
+    #nav-toggle:checked ~ ul {
         display: flex;
         max-height: 300px;
         flex-direction: column;
@@ -286,15 +374,15 @@ footer p {
     }
 
     article:first-of-type {
-        page-break-before: always; /* Add space before the first article */
+        page-break-before: always;
     }
 
     article:last-of-type {
-        page-break-after: always; /* Ensure a clean break after the last article */
+        page-break-after: always;
     }
 
     footer {
         margin-top: 2em;
-        display: block; /* Ensure the footer is visible */
+        display: block; 
     }
 }

@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    
 </head>
 <body>
     <header>
         <nav>
+            <!-- Input checkbox for toggling the menu -->
+            <input type="checkbox" id="nav-toggle" class="toggle-input">
+                
+            <!-- Label for the hamburger icon (this will appear on mobile) -->
+            <label for="nav-toggle" class="hamburger-icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="cv.html" class="active">CV</a></li>
@@ -21,13 +32,14 @@
 
         <article id="cv-image">
             <h1>CV</h1>
+            <div id="hidden-area"></div>
         </article>
     </header>
 
     <main>
         <section>
             <article class="no-print">
-                <h3><a href="links/CV-Simon Eke.pdf">Ladda Ner</a></h3>
+                <h3><a href="links/CV-Simon Eke.pdf">Ladda Ner som PDF</a></h3>
                 
             </article>
             <article>
@@ -66,6 +78,7 @@ Handbollsdomare inom Stockholms distrikt. Dömde kontinuerligt handbollsmatcher.
 
 <br>
 <h3>UTBILDNING</h3>
+
 
 <br>
 Skådespelarkurs, Sundsgårdens Folkhögskola (2022-23)<br>

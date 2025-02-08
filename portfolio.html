@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js" defer></script>
@@ -32,6 +35,7 @@
         
         <article id="portfolio-image">
             <h1>Portfolio</h1>
+            <div id="hidden-area"></div>
         </article>
         
     </header>
@@ -46,29 +50,83 @@
                     <figcaption>HangMan game in action: Player guesses letters until 0 lives or correct word</figcaption>
                 </figure>
 
-                <a href="https://github.com/Simon-Eke/HangMan" target="_blank" title="Click to view my HangMan project on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                <section>
+                    <a href="https://github.com/Simon-Eke/HangMan" target="_blank" title="Click to view my HangMan project on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                    
+                    <!-- Modal Trigger -->
+                    <label for="modal-toggle-hangman" class="more-info-btn">More Info</label>
+
+                    <!-- Hidden Checkbox for Modal -->
+                    <input type="checkbox" id="modal-toggle-hangman" class="modal-toggle" hidden>
+
+                    <!-- Modal -->
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h3>HangMan Game</h3>
+                            <p>This is a classic HangMan game where the player has to guess the correct word before running out of lives.</p>
+                            <a href="https://github.com/Simon-Eke/HangMan" target="_blank" title="Click to view my HangMan project on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                            <label for="modal-toggle-hangman" class="close-btn">Close</label>
+                        </div>
+                    </div>
+                </section>
             </article>
         
             <article class="card">
                 <h2>PONG Game</h2>
 
-                <figure>
+                <figure class="card-section">
                     <img src="pictures/pong-game-screenshot.jpg" alt="Screenshot of PONG game with two paddles and a bouncing ball on a black background">
                     <figcaption>PONG game in action: A player controls a paddle to bounce the ball back and forth.</figcaption>
                 </figure>
 
-                <a href="https://github.com/Simon-Eke/PONG-GAME" target="_blank" title="Click to view my Pong project on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                <section>
+                    <a href="https://github.com/Simon-Eke/PONG-GAME" target="_blank" title="Click to view my Pong project on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                    
+                    <!-- Modal Trigger -->
+                    <label for="modal-toggle-pong" class="more-info-btn">More Info</label>
+
+                    <!-- Hidden Checkbox for Modal -->
+                    <input type="checkbox" id="modal-toggle-pong" class="modal-toggle" hidden>
+
+                    <!-- Modal -->
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h3>PONG Game</h3>
+                            <p>This PONG game is a recreation of the classic arcade game. Built using C#, players control paddles and aim to bounce the ball back to score points.</p>
+                            <a href="https://github.com/Simon-Eke/PONG-GAME" target="_blank" title="Click to view my Pong project on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                            <label for="modal-toggle-pong" class="close-btn">Close</label>
+                        </div>
+                    </div>
+                </section>
             </article>
 
             <article class="card">
                 <h2>Work In Progress...</h2>
 
-                <figure>
+                <figure class="card-section">
                     <img src="pictures/underConstruction.jpg" alt="Picture of a construction site">
                     <figcaption>A construction site.</figcaption>
                 </figure>
 
-                <a href="https://github.com/Simon-Eke" target="_blank" title="Click to view my repos on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                <section>
+                    <a href="https://github.com/Simon-Eke" target="_blank" title="Click to view my repos on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                    
+                    <!-- Modal Trigger -->
+                    <label for="modal-toggle-wip" class="more-info-btn">More Info</label>
+
+                    <!-- Hidden Checkbox for Modal -->
+                    <input type="checkbox" id="modal-toggle-wip" class="modal-toggle" hidden>
+
+                    <!-- Modal -->
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h3>Work In Progress</h3>
+                            <p>This project is under construction. Stay tuned for updates on this exciting new feature!</p>
+                            <a href="https://github.com/Simon-Eke" target="_blank" title="Click to view my repos on GitHub"><i class="fa fa-brands fa-github" style="font-size:40px"></i></a>
+                            <label for="modal-toggle-wip" class="close-btn">Close</label>
+                        </div>
+                    </div>
+                </section>
             </article>
         </section>
     </main>
@@ -79,6 +137,7 @@
     </footer>
 
     <!-- Include JavaScript file at the end of the body -->
+    <script src="script.js"></script>
     
 </body>
 </html>
