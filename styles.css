@@ -10,6 +10,34 @@
     padding: 2px;
 }
 
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+  
+#modal h2 {
+    margin: 0;
+}
+  
+#modal button {
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 h1 {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
@@ -138,7 +166,7 @@ footer p {
 .card {
     border: 1px solid #ddd;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff5d;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -148,13 +176,7 @@ footer p {
     max-width: 100%;
     border-radius: 10px;
     gap: 20px;
-    justify-content: space-evenly;
-}
-
-.card-section {
-    max-width: 100%;
-    padding: 2rem 0;
-    border-style: dotted none;
+    justify-content: space-between;
 }
 
 .card img {
@@ -170,10 +192,9 @@ footer p {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.projects-container .card section {
+.projects-container .card section{
     display: flex;
-    align-items: center;
-    gap: 7rem;
+    gap: 0 4rem;
 }
 
 .modal {
